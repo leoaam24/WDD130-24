@@ -1,0 +1,56 @@
+body {
+    background-color:rgb(255, 168, 183);
+    font-size: 24px;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1{
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+header h1:hover{
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    color: black;
+}
+
+header p{
+    font-size: .8em;
+    text-align: center;
+    color: white;
+}
+
+ol li{
+    display: block;
+    font-weight: bold;
+    line-height: 2;
+
+}
+
+.p2{
+    font-weight: bold;
+}
+
+#quotation-post img{
+    width: 10em;
+    display: block;
+    margin: 0 auto;
+}
+
+.quote-box{
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    line-height: 1.4;
+    font-size: 2rem;
+    font-weight: lighter;
+
+}

@@ -1,0 +1,31 @@
+body {
+    margin: 0 auto;
+    max-width: 1600px;
+
+}
+
+
+#photo-banner img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.image-nav img {
+    box-sizing: border-box;
+    text-align: center;
+    width: 250px;
+    border: 10px solid rgb(114, 110, 110);
+    border-radius: 50%;
+    display: inline;
+    margin-inline: 100px;
+
+}
+
+nav {
+    background-color: grey;
+    padding: 40px;
+    text-align: center;
+    
+}

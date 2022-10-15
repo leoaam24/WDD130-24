@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Righteous&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,6 +9,7 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -24,10 +27,16 @@ main section {
 #background {
     height: 725px;
     background-color: #143b63;
+    margin: 100px 0;
+
 }
 
 body {
     background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -43,6 +52,10 @@ nav a:hover {
     background-color: #ded8ae;
     color: black;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
     
 }
 
@@ -53,6 +66,7 @@ nav a:hover {
 
 .msg {
     background-color: #143b63;
+    line-height: 1.5em;
 }
 
 footer , footer a{
@@ -79,6 +93,7 @@ h4 {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
@@ -99,4 +114,48 @@ footer a {
 
 .msg p {
     color: white;
+    padding-bottom: 15px;
+    font-size: .8em
+    
+}
+
+.home-title {
+    font-family: 'Righteous', 'Lato', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h2 {
+    margin: 0;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.msg {
+    margin: 150px 0;
+    padding: 35px
+    
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+footer {
+    margin-top: 200px;
+    padding: 25px 50px;
+}
+
+.card-img {
+    border: 10px solid black;
+}
+
+main section img {
+    box-sizing: border-box;
 }

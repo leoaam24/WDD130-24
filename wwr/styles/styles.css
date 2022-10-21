@@ -1,51 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Righteous&display=swap');
 
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
-nav a {
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    padding: 35px;
-}
-
-#hero-msg h1, #hero-msg h4 {
-    text-align: center;
-}
-
-.button-box {
-    text-align: center;
-}
-
-main section {
-    text-align: center;
-}
-
-#background {
-    height: 725px;
-    background-color: #143b63;
-    margin: 100px 0;
-
-}
-
 body {
     background-color: white;
-    font-family: 'Lato', sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #2EC4B6;
+h1, h2, h3, h4, h5, h6 { 
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-family: Righteous, Lato, sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+p {
+    color: black;
+    padding: 10px;
+    font-family: Lato;
+    font-size: 1em;
+    line-height: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    line-height: 1em;
+    text-align: center;
+    text-decoration: none;
+    padding: .75em .75em;
+    font-family: Lato;
+    font-size: 3em;
 }
 
 nav a:hover {
     background-color: #cbf3f0;
     color: black;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    background-color: #2EC4B6;
+}
+
+#hero-img {
+    width:100%;
+}
+
+#hero-msg {
+    text-align: center;
+}
+
+.home-title {
+    font-size: 2.5em;
+    color: black;
+}
+
+.home-title {
+    font-size: 2.5em;
+    color: black;
+}
+
+.button-box {
+    text-align: center;
+    margin: 55px;
 }
 
 .book, .join {
@@ -64,98 +105,77 @@ nav a:hover {
     color: black;
 }
 
-.msg {
-    background-color: #143b63;
-    line-height: 1.5em;
+main, section {
+    text-align: center;
 }
 
-footer , footer a{
-    background-color: #2EC4B6;
-    text-decoration: none;
+main section img{
+    box-sizing: border-box;
 }
 
-footer a:hover {
-    color: black;
-    text-decoration: underline;
-}
-
-.home-title {
-    color: black;
-}
-
-h4 {
-    color: black;
-}
-
-.book, .join {
-    color: black;
+.card-img {
+    width: 100%;
+    height: 300px;
+    border: 10px solid black;
 }
 
 .icon {
     width: 80px;
-    padding-top: 10px;
+    margin-top: 25px;
 }
 
-#hero-img {
-    width:100%;
+
+#background {
+    height: 750px;
+    background-color: #143b63;
+    margin: 100px 0;
 }
 
-.logo {
-    width: 80px;
+.mountains {
+    width: 100%;
 }
 
-footer a {
-    font-size: 1.2em;
+
+.msg {
+    background-color: #143b63;
+    padding: 55px;
 }
 
 .msg h2 {
     color: white;
+    font-size: 1em;
 }
 
 .msg p {
     color: white;
     padding-bottom: 15px;
     font-size: .8em
-    
 }
 
-.home-title {
-    font-family: 'Righteous', 'Lato', sans-serif;
-    font-size: 2em;
-    margin-top: 10px;
+footer{
+    background-color: #2EC4B6;
+    padding: 25px 50px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
 }
 
-h2 {
-    margin: 0;
+footer a {
+    font-size: 1.2em;
 }
 
-#logo_link {
-    padding-top: 5px;
+footer a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
-.msg {
-    margin: 150px 0;
-    padding: 35px
-    
+#info {
+    font-size: .75em;
+    color: black;
 }
 
 footer .social img {
     padding-top: 15px;
-}
-
-.rivers-card, .camping-card, .rapids-card {
-    margin: 200px 0;
-}
-
-footer {
-    margin-top: 200px;
-    padding: 25px 50px;
-}
-
-.card-img {
-    border: 10px solid black;
-}
-
-main section img {
-    box-sizing: border-box;
 }

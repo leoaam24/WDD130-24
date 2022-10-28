@@ -2,7 +2,6 @@
 
 body {
     background-color: white;
-    font-size: 22px;
     margin: 0;
     padding: 0;
 }
@@ -11,17 +10,17 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
     padding: 10px;
     text-align: center;
-    font-family: Righteous, Lato, sans-serif;
-    font-size: 1em;
-    line-height: 1em;
+    font-family: 'Righteous', 'Lato', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.1em;
 }
 
 p {
     color: black;
     padding: 10px;
-    font-family: Lato;
-    font-size: 1em;
-    line-height: 1;
+    font-family: 'Lato';
+    font-size: 1.25em;
+    line-height: 1.25;
 }
 
 img {
@@ -45,14 +44,20 @@ img {
     position: relative;
 }
 
+nav {
+    background-color: #2EC4B6;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
 nav a {
     color: white;
     line-height: 1em;
     text-align: center;
     text-decoration: none;
     padding: .75em .75em;
-    font-family: Lato;
-    font-size: 3em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
 }
 
 nav a:hover {
@@ -74,10 +79,6 @@ header {
     text-align: center;
 }
 
-.home-title {
-    font-size: 2.5em;
-    color: black;
-}
 
 .home-title {
     font-size: 2.5em;
@@ -139,6 +140,7 @@ main section img{
 .msg {
     background-color: #143b63;
     padding: 55px;
+    text-align: center;
 }
 
 .msg h2 {
@@ -163,7 +165,7 @@ footer{
 }
 
 footer a {
-    font-size: 1.2em;
+    font-size: .5em;
 }
 
 footer a:hover {
@@ -172,7 +174,7 @@ footer a:hover {
 }
 
 #info {
-    font-size: .75em;
+    font-size: .5em;
     color: black;
 }
 

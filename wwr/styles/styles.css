@@ -256,7 +256,7 @@ footer .social img {
 #rivers-banner {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin: 30px auto
+    margin: 30px auto;
 
 }
 
@@ -264,15 +264,112 @@ footer .social img {
     width: 100%;
     grid-column: 1/4;
     grid-row: 1/2;
+    z-index: -1;
     
 }
 
-.box-info {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+#rivers-banner #box-info {
+    /* border: solid blue 5px; */
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 100px 250px;
+}
+
+#box-info .message {
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px rgb(34, 33, 33);
+}
+
+#box-info p{
+    color: white;
+}
+
+#rivers-banner #background-box{
+    margin: 100px 250px;
+    opacity: .5;
+    background-color: #ded8ae;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: -1;
+}
+
+.main-fork-image{
+    /* border: solid blue 5px; */
+    grid-column: 1/6;
+    grid-row: 1/2;
+    border: 10px solid #ded8ae;
+    transition: transform .5s;
+}
+
+.main-fork-image img{
+    height: 100%;
+    width: 1000px;
+}
+
+.main-fork-info {
+    /* border: solid blue 5px; */
+    padding: 0px;
+    margin: 10px;
+    grid-column: 7/15;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.main-fork-info h1{
+    margin-top: 0;
+    padding: 0 ;
+}
+
+.desolation-image {
+    margin: 20px auto;
+    grid-column: 7/15;
+    grid-row: 2/10;
+    border: 10px solid #ded8ae;
+    transition: transform .5s;
+}
+
+.desolation-image img{
+    height: 100%;
+    width: 1000px;
+}
+
+.desolation-info {
+padding: 0px;
+margin: 10px;
+grid-column: 1/6;
+grid-row: 2/3;
+text-align: center;
 }
 
 
+.grandcanyon-image {
+    margin: 20px auto;
+    grid-column: 1/6;
+    grid-row: 10/10;
+    border: 10px solid #ded8ae;
+    transition: transform .5s;
+}
+
+.grandcanyon-info {
+    /* border: solid blue 5px; */
+    padding: 0px;
+    margin: 10px;
+    grid-column: 7/15;
+    grid-row: 10/15;
+    text-align: center;
+    align-items: center ;
+}
+
+.grandcanyon-image img {
+    height: 100%;
+    width: 1000px;
+}
+
+
+.main-fork-image:hover, .desolation-image:hover, .grandcanyon-image:hover {
+    transform: scale(1.1);
+}
 
 
 

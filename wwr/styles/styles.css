@@ -118,7 +118,6 @@ nav a:hover {
 .button-box {
     text-align: center;
     margin: 55px;
-    ;
 }
 
 .book, .join {
@@ -366,10 +365,145 @@ text-align: center;
     width: 1000px;
 }
 
-
 .main-fork-image:hover, .desolation-image:hover, .grandcanyon-image:hover {
     transform: scale(1.1);
 }
+
+/* This is for Contact Us page */
+
+.home-grid-contact {
+    display:grid;
+    grid-template-columns: repeat(10, 200px);
+    grid-template-rows: repeat(13, 150px);
+
+}
+
+#ContactUs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#ContactUs h1{
+    text-align: left;
+    font-size: 5em;
+
+}
+
+#contact-bg {
+    background-color:#143b63;
+    grid-column: 1/5;
+    grid-row: 1/6;
+    transition: .5s;
+}
+
+#contact-box {
+    background-color: transparent;
+    grid-column: 1/5;
+    grid-row: 1/4;
+    padding: 50px;
+    margin: 5px;
+    transition: .5s;
+
+}
+
+#contact-box img {
+    width: 300px;
+}
+
+#contact-box h1{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+#contact-box p{
+    color: white;
+}
+
+/* #contact-box .button-box{
+    background-color: #ded8ae;
+    padding: 25px;
+
+} */
+
+#contact-box .button-box a {
+    font-size: 1.5em;
+}
+
+
+
+#river-mountain {
+    /* border: solid blue 5px; */
+    grid-column: 3/9;
+    grid-row: 3/9;
+    z-index: -1;
+}
+
+#river-mountain img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#booknow-bg {
+    background-color: #143b63;
+    grid-column: 5/9;
+    grid-row: 10/14;
+    margin-bottom: 50px;
+}
+
+#booknow-box {
+    padding: 30px;
+    grid-column: 5/9;
+    grid-row: 10/13;
+    transition: .5s;
+    
+}
+
+#booknow-box img {
+    /* border: solid white 5px; */
+    width: 200px;
+    padding: 25px
+}
+
+#booknow-box h1{
+    /* border: solid white 5px; */
+    margin: 0;
+    font-size: 2.5em;
+    padding: 5px;
+    text-align: left;
+    color: white;
+}
+
+#booknow-box h2{
+    /* border: solid white 5px; */
+    line-height: .2;
+    padding-top: 25px;
+    font-size: 1.5em;
+    text-align: left;
+    color: white;
+}
+
+.contacts-book {
+    /* border: solid white 5px; */
+    border-radius: 10px;
+    background-color: #ded8ae;
+    padding: 20px 70px;
+    text-decoration: None;
+}
+
+.contacts-book:hover {
+    background-color: #143b63;
+    color: white;
+    border: 1px solid white;
+}
+
+#contact-box:hover{
+    transform: scale(1.1);
+}
+
+
 
 
 

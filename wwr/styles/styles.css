@@ -507,8 +507,8 @@ text-align: center;
     grid-column: 6/9;
     grid-row: 4;
     width: 500px;
-    height: 500px;
-    opacity: .5;
+    height: 350px;
+    opacity: .8;
     background-color: #ffffff;
     z-index: -1;
 }
@@ -516,14 +516,13 @@ text-align: center;
 .form-message {
     width: 500px;
     /* border: 1px solid black; */
-    align-items: center;
     grid-column: 6/9;
     grid-row: 4;
 }
 
 
 .form-message h1  {
-    text-align: left;
+    text-align: center;
     padding-bottom: 0;
     margin-bottom: 0;
 }

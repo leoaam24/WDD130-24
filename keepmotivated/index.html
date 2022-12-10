@@ -54,15 +54,15 @@
             <section class="coming-soon">
                 <h2 class="coming-soon-content">Coming Soon:</h2>
                 <p>Want to get updated for more content? Please enter your email and be updated for news and updates from me.</p>
-                
+                <div id="feedback"></div>
+                <form action="/my-handling-form-page" method="post">
+                    <input type="email" id="mail" name="user_email" placeholder="Enter Email Address">
+                    <div class="coming-soon-button">
+                    <button type="submit">Subscribe</button>
+                    </div>
+                </form>   
             </section>
-            <div id="feedback"></div>
-            <form action="/my-handling-form-page" method="post">
-                <input type="email" id="mail" name="user_email" placeholder="Enter Email Address">
-            </form>
-            <div class="coming-soon-button">
-                <button type="submit">Subscribe</button>
-            </div>
+            
         </main>
         <footer>
             <p id="info"> A and D &copy; 2022 - Leo Alfred Mosquera WDD130-24</p>

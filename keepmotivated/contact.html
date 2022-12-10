@@ -24,21 +24,32 @@
                 <h2>Contact Me</h2>
             </div>
             <section class="contact-me-content">
-                <p>If you want to know more from me or just want someone to listen, you can book an appointment from my calendar link below. Please note that this service is free, and time slots will only be limited. You can always email me if you have questions or want to share something with me. You can email me at leo.a.mosquera@gmail.com. I will do what I can to respond immediately. You can also contact or follow me on my social media accounts on this site.</p>
-                <img class="calendar-book" src="images/contact_1.png" alt="calendar icon">
-                <p>Book an Appointment</p>
-                <img class="call-now" src="images/contact_2.png" alt="phone icon">
-                <p>Call Now</p>
+                <p class="main-p">If you want to know more from me or just want someone to listen, you can book an appointment from my calendar link below. Please note that this service is free, and time slots will only be limited. You can always email me if you have questions or want to share something with me. You can email me at leo.a.mosquera@gmail.com. I will do what I can to respond immediately. You can also contact or follow me on my social media accounts on this site.</p>
+                <div id="calling-contact" class="tabcontent">
+                    <h1 class="call-now-title">Call Now</h1>
+                    <img class="call-img" src="images/contact_1.png" alt="photo icon">
+                    <p class="call-p">Click the image above to call me directly. Please note that I am only available between 9 AM - 12 PM and 4 PM - 6 PM EST. International phone fee charges will apply.</p>
+                  </div>
+                  <div id="book-appointment" class="tabcontent">
+                    <h1 class="booking-title">Book an Appointment</h1>
+                    <img class="calendar-img" src="images/contact_2.png" alt="calendar icon">
+                    <p class="book-p">Busy? You can book on my calendar for your convenient date and time to chat. </p>
+                  </div>
+                  <button class="tablink" onclick="openButton('calling-contact', this, 'skyblue')" id="defaultOpen">Call Now</button>
+                  <button class="tablink" onclick="openButton('book-appointment', this, 'green')">Book an Appointment</button>
             </section>
             <section class="coming-soon">
+                <div id="feedback"></div>
                 <h2 class="coming-soon-content">Coming Soon:</h2>
                 <p>Want to get updated for more content? Please enter your email and be updated for news and updates from me.</p>
-            </section>
-            <div id="feedback"></div>
-            <form action="/my-handling-form-page" method="post">
-                <input type="email" id="mail" name="user_email" />
-            </form>
+                <form action="/my-handling-form-page" method="post">
+                    <input type="email" id="mail" name="user_email" placeholder="Enter Email Address">
+                    <div class="coming-soon-button">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </form>
         </main>
+    
         <footer>
             <p id="info"> A and D &copy; 2022 - Leo Alfred Mosquera WDD130-24</p>
             <p><a href="site-plan.html">Site Plan</a></p>
@@ -56,5 +67,30 @@
             </div>
         </footer>
     </div>
+    <script>
+        function openButton(buttonName, elmnt, color) {
+        // Hide all elements with class="tabcontent" by default */
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+      
+        // Remove the background color of all tablinks/buttons
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+      
+        // Show the specific tab content
+        document.getElementById(buttonName).style.display = "block";
+      
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = color;
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
 </body>
 </html>

@@ -563,8 +563,9 @@ footer .social img {
     padding: 50px;
 }
 
+
 @media screen and (max-width: 800px) { 
-    #content, .home-grid, #Introduction {
+    #content, .home-grid, #Introduction, .resource-grid{
         display: block;
         height: auto;
     }
@@ -584,7 +585,7 @@ footer .social img {
     }
 
 
-    .truth-content, .matters-content, .coming-soon {
+    .truth-content, .matters-content, .coming-soon, .official-site, .media-library, .inspiring-music {
         display: block;
         height: auto;
     }
